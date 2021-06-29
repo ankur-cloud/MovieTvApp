@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+.content_lands {
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.content_porait {
+  display: none;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.tagline {
+  padding-bottom: 10px;
+  align-self: center;
+}
+
+.contentM {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.contentM::-webkit-scrollbar {
+  display: none;
+}
+
+.contentMA {
+  padding: 10px;
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-evenly;
+  font-weight: 300;
+}
+
+.contentMT {
+  height: 12%;
+  font-size: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentMD {
+  display: flex;
+  height: 40%;
+  overflow-y: scroll;
+  padding: 15px;
+  border-radius: 20px;
+  scrollbar-width: thin; /* Firefox */
+  box-shadow: inset 0 0 5px #000000;
+  text-align: justify;
+}
+
+.contentMD::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 835px) {
+  .content_lands {
+    display: none;
+  }
+  .content_porait {
+    display: flex;
+    width: 38%;
+  }
+  .contentM {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  .contentMA {
+    width: 58%;
+    padding: 0;
+    height: 100%;
+  }
+  .contentMT {
+    font-size: 3.5vw;
+  }
+  .contentMD {
+    font-size: 22px;
+  }
+}
